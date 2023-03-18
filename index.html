@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation in Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>User Registration</h2>
+        </div>
+        <form class="form" onsubmit="return validateForm()">
+            <div class="form-control">
+                <label for="">User Name</label>
+                <input id="txtUserName" type="text"  placeholder="User Id">
+                <p id="userError" class="msg"></p>
+            </div>
+            <div class="form-control">
+                <label for="">Email Address</label>
+                <input id="textEmail" type="email"  placeholder="Your Email">
+                <p id="emailError" class="msg"></p>
+            </div>
+            <div class="form-control">
+                <label for="">Password</label>
+                <input id="textPsd" type="password"  placeholder="Enter Password">
+                <p id="passError" class="msg"></p>
+            </div>
+            <div class="form-control">
+                <label for="">Confirm Password</label>
+                <input id="textConPsd" type="password"  placeholder="Confirm Password">
+                <p id="conError" class="msg"></p>
+            </div>
+            <div class="form-control">
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
